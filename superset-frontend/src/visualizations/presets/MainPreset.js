@@ -26,6 +26,7 @@ import ChordChartPlugin from '@superset-ui/legacy-plugin-chart-chord';
 import CountryMapChartPlugin from '@superset-ui/legacy-plugin-chart-country-map';
 import EventFlowChartPlugin from '@superset-ui/legacy-plugin-chart-event-flow';
 import HeatmapChartPlugin from '@superset-ui/legacy-plugin-chart-heatmap';
+import { HelloWorldChartPlugin } from '@superset-ui/plugin-chart-hello-world' 
 import HistogramChartPlugin from '@superset-ui/legacy-plugin-chart-histogram';
 import HorizonChartPlugin from '@superset-ui/legacy-plugin-chart-horizon';
 import MapBoxChartPlugin from '@superset-ui/legacy-plugin-chart-map-box';
@@ -119,6 +120,7 @@ export default class MainPreset extends Preset {
           key: 'mixed_timeseries',
         }),
         new HeatmapChartPlugin().configure({ key: 'heatmap' }),
+        new HelloWorldChartPlugin().configure({ key: 'hello_world'}),
         new HistogramChartPlugin().configure({ key: 'histogram' }),
         new HorizonChartPlugin().configure({ key: 'horizon' }),
         new LineChartPlugin().configure({ key: 'line' }),
